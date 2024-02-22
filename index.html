@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新海诚电影介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+        h1 {
+            color: #fff; /* 修改标题颜色为白色 */
+        }
+        h2, h3 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .movie-image {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-style: italic;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            /* 移除底部黑色背景 */
+            background-color: transparent;
+            color: #000;
+        }
+        nav a {
+            color: #fff; /* 修改按钮文字颜色为白色 */
+            text-decoration: none;
+            margin-right: 20px;
+            transition: color 0.3s;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: transparent;
+            transition: background-color 0.3s;
+        }
+        nav a.active {
+            color: #00f; /* 设置活动状态颜色为蓝色 */
+        }
+        nav a.active::after {
+            background-color: #00f; /* 设置活动状态下划线颜色为蓝色 */ 
+        }
+        /* 添加样式以隐藏其他页面 */
+        .hidden {
+            display: none;
+        }
+        /* 添加人物介绍标题样式 */
+        .section-title {
+            color: #00a2e8; /* 天蓝色 */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* 添加人物介绍样式 */
+        .person-info {
+            display: flex;
+            align-items: center;
+        }
+        .person-image {
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .person-text {
+            flex: 1;
+        }
+        /* 添加精彩照片样式 */
+        .photo-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>新海诚电影介绍</h1>
+        <nav>
+            <a href="#home" class="active">首页</a> <!-- 设置为活动状态 -->
+            <a href="#person">人物介绍</a>
+            <a href="#movie">电影介绍</a>
+            <a href="#photo">精彩照片</a>
+        </nav>
+    </header>
+
+    <div id="home" class="container">
+        <h2>你的名字</h2>
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.bc671997a67974e53aab75d06c54fade?rik=vHb72xqXnlMM4w&riu=http%3a%2f%2fi1.hdslb.com%2fbfs%2farchive%2fd5296da3201bce0e598618af4fc57b979a879bcd.jpg&ehk=XbEQu%2bmNMh3vmJn1S0uObKLxdB6iMDYDy5OBBj1lgW0%3d&risl=&pid=ImgRaw&r=0" alt="《你的名字》" class="movie-image">
+        <p>《你的名字。》是由日本导演新海诚执导的一部原创动画电影，由神木隆之介和上白石萌音担任主要配音。影片于2016年8月26日在日本上映，中国大陆于2016年12月2日上映。
+
+影片讲述了男女高中生在梦中相遇，并寻找彼此的故事。他们之间的联系和吸引力越来越强烈，最终导致了一个令人惊喜的结局。这部电影探讨了爱情和时空的主题，两个年轻人间的时间和空间隔阂在电影中被描绘得异常清晰。他们互换身份，了解彼此的生活，然后渐渐地相爱了。这种慢慢逼近的爱情线索给了观众一种期待和紧张的感觉。电影的结尾也是出人意料的，它不仅解决了影片中的难题，同时也表达了主题的情感和故事的深度。
+
+电影中的主人公们都有着鲜明的个性和特点，他们的性格和情感上的变化都被刻画得非常细腻。特别是电影中男女主角之间的相互理解和包容，让人感受到了一种纯真的爱情，同时也让人感叹人与人之间的心灵相通之美。</p>  <!-- 电影1的简要介绍，包括故事梗概、主要角色等。 -->
+        <p class="quote">君の名前は</p>            <!-- 电影1的一句经典台词或引用 -->
+        <p class="quote">我要告诉你，不管你在世界的哪个地方，我们终将再次相遇。</p> 
+        <p class="quote">“想和你重新认识一次 从你叫什么名字说起”</p> 
+        <h2>天气之子</h2>
+        <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.eltw24zmnlb0ZV4Rk05nZQHaKc?rs=1&pid=ImgDetMain" alt="《天气之子》" class="movie-image">
+        <p>《天气之子》是一部由新海诚执导，Comix Wave Films负责制作的原创动画电影。该电影讲述了少年森岛帆高和少女天野阳菜之间的奇幻爱情故事。帆高是一名离家出走、独自来到东京的高中生，他在那里找到了一份为古怪的超自然杂志撰稿的工作。在东京，帆高遇到了阳菜，她是一个与弟弟相依为命的中学生，拥有让天空放晴的不可思议能力。
+
+阳菜的这种能力使她能够通过祈祷让雨水随着她合拢的双手被吸回天空，因此她被人们称为“100%晴天女孩”。帆高和阳菜在东京相互依赖，并逐渐萌生情愫。然而，阳菜作为晴女的命运是会被当作奉献者去换取当前东京恶劣天气的结束，这意味着她最终可能会消失。
+
+当帆高得知阳菜的结局后，他决定不顾一切地去救她。在面对“是世界还是她”的问题时，帆高选择了阳菜，他愿意为了她奋力一搏，甚至斩钉截铁地说出：“比起世界，我更需要她。”影片中，连绵不断的阴雨天气让人们期待阳光的重新出现，就像在孤独黑暗的日子里期待温暖光明的到来。影片以唯美的画风和深刻的意境为特点，将现代都市和传统日本文化巧妙融合，为观众带来了一场视觉和心灵上的冲击。
+
+《天气之子》不仅是一部充满想象力和感性的电影，它还启发人们对生命和自然进行思考。影片中的爱情故事、成长和冒险，以及关于天气和自然的深刻思考，都给观众留下了深刻的印象。</p>
+        <p class="quote">帆高,能遇见你真的太好了</p>
+        <p class="quote">人心还真是不可思议，像是早晨看到窗外的晴天就能变得活力，光是看到蓝天，就会觉得活着真好。</p>
+
+        <!-- 添加更多电影信息 -->
+
+    </div>
+
+    <!-- 添加其他页面，设置为隐藏状态 -->
+    <div id="person" class="container hidden">
+        <!-- 添加人物介绍标题 -->
+        <h2 class="section-title">—— 人物介绍 ——</h2>
+        <!-- 人物介绍页面内容 -->
+        <div class="person-info">
+            <!-- 图片放在文字的左侧 -->
+            <img src="https://bkimg.cdn.bcebos.com/pic/ac6eddc451da81cb272f19265e66d0160824310b?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="人物照片" class="person-image">
+            <div class="person-text">
+                <h2>新海诚</h2>
+                <p>新海诚（Makoto Shinkai），原名新津诚（Makoto Niitsu），1973年2月9日出生于日本长野县南佐久郡小海町，日本动画导演、编剧、漫画作家，毕业于日本长野县野泽北高等学校、日本中央大学文学部日本文学系。
+1997年，执导了黑白短片《遥远世界》，该片获得了eAT金沢’98にて特别赏 [1]。2000年，执导了黑白动画短片《她和她的猫》，该片获得了第12届DoGA CG动画大赛最优秀奖 [1]。2002年，执导的动画电影《星之声》。2004年11月20日，执导的个人首部长篇电影《云之彼端，约定的地方》上映，该片获得了第59届日本每日映画大奖动画奖 [2]。2007年3月3日，编导的爱情动画电影《秒速5厘米》上映，该片获得了亚洲太平洋电影节最佳动画电影奖 [3]。
+2011年5月7日，执导的奇幻冒险动画电影《追逐繁星的孩子》上映。2013年5月31日，自编自导的爱情动画电影《言叶之庭》上映，该片获得了斯图加特国际动画电影节长篇部门最优秀奖 [4]。2016年，编导了动画电影《你的名字。》，凭借该片获得了第40届日本电影学院奖最佳编剧奖 [5]及第26届日本电影评论家大奖最佳导演奖。2018年，执导了动画长片《天气之子》。2019年11月，新海诚制作的动画电影《天气之子》获得第44届报知电影奖最佳动画影片奖。</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="movie" class="container hidden">
+        <!-- 电影介绍页面内容 -->
+        <h2 class="section-title">—— 电影介绍 ——</h2>
+        <div class="person-info">
+            <img src="https://ts3.cn.mm.bing.net/th?id=OIP-C.ezIkYuLT1HRYI17xz1oTVgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="电影1" class="person-image">
+            <div class="person-text">
+                <h2>秒速五厘米</h2>
+                <p>《秒速5厘米》是新海诚创作的一部写实动画电影，于2007年3月3日在日本正式上映。 作品以一个少年为故事轴心而展开连续3个独立故事的动画短篇，时代背景是从1990年代至现代的日本，通过少年的人生展现东京以及其他地区的变迁。</p>
+                <p>   </p>
+            </div>
+        </div>
+        <div class="person-info">
+            <img src="https://bkimg.cdn.bcebos.com/pic/8326cffc1e178a829eca9383f403738da977e81b?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080" alt="电影2" class="person-image">
+            <div class="person-text">
+                <h2>言叶之庭</h2>
+                <p>  《言叶之庭》由曾执导过《星之声》、《秒速5厘米》、《追逐繁星的孩子》等动画电影的新海诚掌镜，影片于2013年5月31日在台湾、香港、日本同步上映。乐视网也取得了电影的网络同步上映版权。《言叶之庭》的故事发生在现代东京，故事讲述了以制鞋人为目标的少年秋月和神秘女子雪野的恋爱故事。故事源于万叶集开篇的“孤悲”之恋，作品中透露出鞋、万叶集、日本庭园、雨等因素。  </p>
+                <p>    </p>
+            </div>
+        </div>
+        <div class="person-info">
+            <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.O67Ra7XVH6y2oMdsxn7d7QHaEr?w=256&h=180&c=7&r=0&o=5&pid=1.7" alt="电影3" class="person-image">
+            <div class="person-text">
+                <h2>你的名字</h2>
+                <p>《你的名字。》是由日本导演新海诚执导的一部原创动画电影，由神木隆之介和上白石萌音担任主要配音。影片于2016年8月26日在日本上映，中国大陆于2016年12月2日上映。 影片讲述了男女高中生在梦中相遇，并寻找彼此的故事。他们之间的联系和吸引力越来越强烈，最终导致了一个令人惊喜的结局。这部电影探讨了爱情和时空的主题，两个年轻人间的时间和空间隔阂在电影中被描绘得异常清晰。他们互换身份，了解彼此的生活，然后渐渐地相爱了。这种慢慢逼近的爱情线索给了观众一种期待和紧张的感觉。电影的结尾也是出人意料的，它不仅解决了影片中的难题，同时也表达了主题的情感和故事的深度。 电影中的主人公们都有着鲜明的个性和特点，他们的性格和情感上的变化都被刻画得非常细腻。特别是电影中男女主角之间的相互理解和包容，让人感受到了一种纯真的爱情，同时也让人感叹人与人之间的心灵相通之美。</p>
+                <p>    </p>
+            </div>
+        </div>          
+        <div class="person-info">
+            <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.eltw24zmnlb0ZV4Rk05nZQHaKc?rs=1&pid=ImgDetMain" alt="电影4" class="person-image">
+            <div class="person-text">
+                <h2>天气之子</h2>
+                <p>《天气之子》是由新海诚执导、Comix Wave Films负责制作的原创动画电影，该片讲述了少年帆高与拥有操控天气超能力的少女阳菜之间的奇幻爱情故事。</p>
+                <p>  详情见首页！哈哈  </p>
+            </div>
+        </div>
+        <div class="person-info">
+            <img src="https://ts4.cn.mm.bing.net/th?id=OIP-C.tV2omIui0Is-MH2_E_M5qAHaKG&w=214&h=291&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="电影5" class="person-image">
+            <div class="person-text">
+                <h2>铃芽之旅</h2>
+                <p>门的另一边，有着所有的时间——
+铃芽是一位生活在九州的一个宁静小镇上的17岁少女，在2023年9月25日这天，她遇到了“正在找门”的旅行青年草太。跟随着他的脚步，铃芽来到了山上的废墟之地，她发现有一扇古老的门孤零零地伫立在那。铃芽仿佛被什么吸引了一般，将手伸向了那扇门……
+据说，灾祸将会从门的那一边降临于现世，所以草太作为将门锁上的“闭门师”在各地旅行。
+“铃芽，我喜欢”“至于你，碍事”
+大臣话音刚落，草太就变成了椅子，而且那是铃芽小时候妈妈作为生日礼物送给她的缺了一条腿的椅子。为了抓住大臣，草太以三条腿椅子的样子跑了出去，铃芽也慌忙地跟了上去。
+不久之后，日本各地的门开始一扇接一扇地打开。在奇异的门和小猫的引导下，铃芽在九州、四国、关西，还有东京及日本列岛开始了“锁门之旅”。途中铃芽得到了很多帮助，并且当她于9月29日到达最后一扇往门时，她发现了一个被遗忘的真相</p>
+                <p>    </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="photo" class="container">
+        <!-- 精彩照片页面内容 -->
+        <h2 class="section-title">—— 精彩照片 ——</h2>
+        <div class="photo-container">
+            <div class="photo">
+                <img src="https://ts3.cn.mm.bing.net/th?id=OIP-C.6LJVGC9y3tXzTNtYEglCgwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="照片1">
+            </div>
+            <div class="photo">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.GH84SdnTnYuzfqmUXic7QgHaEs?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="照片2">
+            </div>
+            <div class="photo">
+                <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.fvsybexlWwfCaM5j-j9IcQHaD4?w=286&h=180&c=7&r=0&o=5&pid=1.7" alt="照片3">
+            </div>
+            <div class="photo">
+                <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.2T0WP--FVlu1fuxAV1pvXgHaEK?w=288&h=180&c=7&r=0&o=5&pid=1.7" alt="照片4">
+            </div>
+            <div class="photo">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.U_Ih9Aj2_YYAMqj4bPZHpgHaEO?w=284&h=180&c=7&r=0&o=5&pid=1.7" alt="秒速五厘米">
+            </div>
+            <div class="photo">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.ZKEfw4Bv50HntQoy1nNy1wHaEb?w=314&h=187&c=7&r=0&o=5&pid=1.7" alt="照片6">
+            </div>
+            <div class="photo">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.BjL1DFvBBBlAu8fdbEj_xQHaEK?w=324&h=182&c=7&r=0&o=5&pid=1.7" alt="照片7">
+            </div>
+            <div class="photo">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.6QetV39i3Klr7O6TtykNFgHaEK?w=278&h=180&c=7&r=0&o=5&pid=1.7" alt="照片8">
+            </div>
+            <div class="photo">
+                <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.SEQ3P3AoHnEcWxnyn8y-pwHaEJ?w=331&h=186&c=7&r=0&o=5&pid=1.7" alt="照片9">
+            </div>
+            <div class="photo">
+                <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.nAqc2nz-28DibgMQHdgG2AHaEo?w=292&h=182&c=7&r=0&o=5&pid=1.7" alt="照片10">
+            </div>
+            <div class="photo">
+                <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.3AQsAvf77JgDQHQT3dLUoAHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt="照片11">
+            </div>
+            <div class="photo">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.P8dnlMvQY2zo7_YTCH8yuwAAAA?w=306&h=191&c=7&r=0&o=5&pid=1.7" alt="照片12">
+            </div>
+            <!-- 继续添加更多图片 -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- 修改页脚文字颜色为黑色 -->
+        <p>&copy; 2024 新海诚电影介绍网页</p>
+    </footer>
+
+    <script>
+        // JavaScript 代码用于切换页面
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const targetLink = document.querySelector(`nav a[href='${hash}']`);
+                if (targetLink) {
+                    targetLink.classList.add('active');
+                    document.querySelector(hash).classList.remove('hidden');
+                }
+            }
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // 阻止默认跳转行为
+
+                    // 移除所有链接的活动状态
+                    document.querySelectorAll('nav a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+
+                    // 隐藏所有页面
+                    document.querySelectorAll('.container').forEach(page => {
+                        page.classList.add('hidden');
+                    });
+
+                    // 将当前点击的链接设为活动状态
+                    this.classList.add('active');
+
+                    // 显示与链接对应的页面
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).classList.remove('hidden');
+
+                    // 更新 URL
+                    window.location.hash = this.getAttribute('href');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
